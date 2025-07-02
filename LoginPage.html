@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+    <header>
+        <a href="index.html" class="logo">Muscle<span> Garage</span></a>
+    </header>
+    <section class="login-section">
+    <div class="login">
+        <h1 class="heading">Login <span>Here</span></h1>
+        <form id="loginForm">
+            <label for="email">Username:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+         <p id="invali"></p>
+        <p>Don't have an account? <a href="RegisterPage.html">Sign Up</a></p>
+    </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>

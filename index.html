@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Musvle Garage</title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+
+    <body>
+
+        <header>
+
+            <a href="#home" class="logo">Muscle<span> Garage</span></a>
+
+            <div class='bx bx-menu' id="menu-icon"></div>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About us</a></li>
+            </ul>
+            <div class="top">
+                <a href="LoginPage.html" target="_blank" class="nav" id="joinbtn1">Join us</a>
+                <a href="index.html" target="_blank" class="nav" id="logout">LogOut</a>
+            </div>
+        </header>
+
+        <section class="home" id="home">
+            <div class="content" >
+                <h3 >No Pain</h3>
+                <h3 data-aos="zoom-in"><span class="multiple-text">No Reps</span></h3>
+                <p class="quotes"><I>We are a team of professionals who are dedicated to providing the best services for you.</I></p><br>
+                <a href="LoginPage.html" target="_blank" class="btn" id="joinbtn2">Join Us</a>
+
+                <div class="image">
+                   <img src="assests/arnold-removebg-preview.png" alt="home image">
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <h1 class="heading">Our <span>Services</span></h1>
+            <div class="s-content" data-aos="zoom-in-down">
+                <div class="row service-link">
+                    <img src="assests/physicaltraining.jpg" alt="">
+                    <h3>Physical Training</h3>
+                </div>
+                <div class="row service-link">
+                    <img src="assests/wp7535570-cardio-workout-wallpapers.jpg" alt="">
+                    <h3>Cardio</h3>
+                </div>
+                <div class="row service-link">
+                    <img src="assests/2058300.jpg" alt="">
+                    <h3>Power Lifting</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-img"data-aos="zoom-in-down">
+                <img src="assests/d52a48f2-b2ba-4cea-8637-20f834d361fd.jpeg" alt="about image">
+            </div>
+            <div class="a-content"data-aos="zoom-in-down">
+                    <h2 class="heading">About <span> Us</span></h2>
+                    <p>We are a team of professionals who are dedicated to providing the best services for you. Our team is made up of experienced trainers who are passionate about helping you achieve your fitness goals.</p>
+                    <p>We offer a wide range of services, including physical training, cardio, and power lifting. Our goal is to help you become the best version of yourself.</p>
+
+                    <a href="LoginPage.html" target="_blank" class="btn">Book a Free Class</a>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <h3><span>Muscle </span>Garage</h3>
+                <ul class="contact">
+                    <li>Email-musclegarage@gmail.com</li>
+                    <li>Phone-91+9344251768</li>
+                    <li>Address-1234, Muscle Street, Fitness City</li>
+                </ul>
+            </div>
+        </footer>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+         AOS.init({
+            offset:300,
+            duration:1400,
+            once:true
+         });
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>RegisterPage</title>
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="login-body">
+        <header>
+        <a href="index.html" class="logo">Muscle<span> Garage</span></a>
+    </header>
+    <section class="login-section">
+    <div class="otpsender" id="otpsender">
+        <div class="login">
+        <h1 class="heading">Register <span>Here</span></h1>
+        <form id="emailForm">
+
+            <label for="email">Username:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+
+            <button class="clicked" id="sendBtn" type="submit">Send OTP</button>
+            <p id="error"></p>
+            <p>Already have an account? <a href="LoginPage.html">Login</a></p>
+        </form>
+    </div>
+    </div>
+
+   <div id="otp-verification" style="display: none;">
+  <div class="login">
+    <h1 class="heading">OTP Verification</h1>
+    <form id="verify-form">
+      <label for="otp">Enter OTP:</label><br>
+      <input type="number" id="otp" name="otp" placeholder="Enter the OTP sent to your email" required><br><br>
+      <button type="submit">Verify</button>
+    </form>
+
+    <p id="otp-result"></p>
+  </div>
+</div>
+  
+
+    </section>
+    <script src="reg.js"></script>
+    </body>
+
+
+</html>

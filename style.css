@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+:root {
+    --bg-colour:#000;
+    --snd-bg-colour: #111;
+    --text-colour: #fff;
+    --main-colour: #f00;
+    --font-fam: 'Poppins', sans-serif;
+
+}
+html {
+    font-size: 70%;
+    overflow-x: hidden;
+}
+body{
+    background: var(--bg-colour);
+    color: var(--text-colour);
+}
+section
+{
+    min-height: 100vh;
+    padding: 10rem 8% 2rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  2rem 9%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+.logo {
+    font-size: 4rem;
+    color: var(--text-colour);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+span{
+    color: var(--main-colour);
+}
+.navbar {
+    top:-100%;
+    right: 0;
+    transition:top 0.5s easet;
+    display: flex;
+}
+.navbar a{
+    font-size: 1.8rem;
+    font-weight:500;
+    color:var(--text-colour);
+    margin-left: 2rem;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid transparent;
+    
+}
+.navbar a:hover,.navbar a.active {
+    color: var(--main-colour);
+    top:100%;
+    border-bottom: 3px solid var(--main-colour);
+}
+.nav{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background :transparent;
+    color:var(--main-colour);
+    border:2px solid var(--main-colour);
+    border-radius: 1rem;
+    font-size : 1.8rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.nav:hover {
+    background: var(--main-colour);
+    color: var(--text-colour);
+}
+#menu-icon {
+    font-size: 3rem;
+    color: var(--main-colour);
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.content h3 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+.content span{
+    font-size: 6rem;
+    font-weight: 7000;
+}
+.quotes {
+    font-size: 1.3rem;
+    font-weight: 450;
+    margin-top: 1rem;
+    color: var(--text-colour);
+}
+.image img{
+    width: 45vw;
+}
+.image:before{
+    content: 'THE PUMP IS REAL';
+    position: absolute;
+    top: 10%;
+    left: 38%;
+    transform: translateX(-35%);
+    font-size: 25rem;
+    font-weight: 600;
+    line-height: 22rem;
+    color:var(--text-colour);
+    opacity: 0.1;
+    z-index: -1;
+}
+.content p{
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--main-colour);
+    border-radius: 1rem;
+    box-shadow: none;
+    font-size: 1.6rem;
+    color:var(--bg-colour);
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    transition: 0.5s ease;
+}
+.btn:hover {
+    color: var(--text-colour);
+    box-shadow: (0 0 1.6rem var(--main-colour));
+}
+/*Services Section */
+.services {
+    background:var(--snd-bg-colour);
+}
+.heading {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.s-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap:2.3rem;
+    margin-top: 4.1rem;
+}
+.row{
+    background: var(--bg-colour);
+    border-radius: 27px;
+    border:1px solid transparent;
+    box-shadow: 0 0 5px var(--main-colour);
+    padding: 20px;
+    transition: all 0.5s ease;
+}
+.row img{
+    height: auto;
+    width: 100%;
+    border-radius: 27px;
+    margin-bottom: 1.4rem;
+}
+.row h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.4rem;
+}
+.row:hover{
+    border: 1px solid var(--main-colour);
+    transition: all 0.5s ease;
+    transform: translate(-5px) scale(1.04);
+    cursor: pointer;
+}
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.about .heading {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.about-img{
+    width: 80%;
+}
+.about-img img{
+    width: 100%;
+    border-radius: 1rem;
+    transition: 0.5s ease;
+}
+.about-img img:hover{
+    transform: scale(1.05);
+}
+.a-content {
+    padding: 0.3rem;
+}
+.a-content h3 {
+    text-align: left;
+    line-height:1.2;
+}
+.a-content p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 2rem 0 2rem;
+}
+footer {
+    background: var(--snd-bg-colour);
+    padding: 2rem 0;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.contact li{
+    font-family: var(--font-fam);  
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-colour);
+    margin-bottom: 1rem;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--main-colour);
+    width: 50px;
+}
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:991px){
+    #menu-icon {
+        display: block;
+    }
+    .navbar
+    {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 255px;
+        min-height: 100vh;
+        display: flex;
+        background: var(--bg-colour);
+        flex-direction: column;
+        transition: all 0.5s ease-in-out;
+    }
+    .navbar a{
+        display:block;
+        padding: 17px;
+        font-size: 22px;
+    }
+    .navbar.active {
+        right: 0;
+    }
+    header {
+        padding: 2rem 3%;
+    }  
+    section {
+        padding: 7rem;
+    } 
+    .services
+    {
+        padding: 7rem;
+    }
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .a-content h2{
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 5rem;
+    }
+}
+/*Login and Register Page */
+.login-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #03070f;
+    padding: 2rem;
+}
+
+.login-section .heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--text-colour);
+    margin-bottom: 3rem;
+    font-family: var(--font-fam);
+}
+
+.login {
+    background: #121c2b63;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 3rem;
+    border: 2px solid #1e263563;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+form {
+    width: 100%;
+}
+
+form label {
+    font-family: var(--font-fam);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text-colour);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background:  #1d2c4263;
+    border: 1px solid #1e263563;
+    border-radius: 0.6rem;
+    color: var(--text-colour);
+    font-size: 1.5rem;
+}
+input::placeholder {
+    font-size: 1.2rem;
+    font-family: var(--font-fam);
+    color: rgb(167, 165, 165);
+}
+button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background-color:var(--main-colour);
+    color: rgb(243, 242, 242);
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0.6rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: var(--font-fam);
+}
+
+button[type="submit"]:hover {
+    background-color: #f05800;
+}
+
+.login p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text-colour);
+    font-family: var(--font-fam);
+}
+
+.login p a {
+    color: var(--main-colour);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: var(--font-fam);
+}
+.login-body header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  2rem 9%;
+    background: #03070f;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+.clicked {
+    background-color: grey;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+#logout{
+    display:none;
+}
+/*Plans*/
+.plans {
+    background: var(--snd-bg-colour);
+}
+.plan-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap:2.3rem;
+    margin-top: 4.1rem;
+}
+.plans h3 {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.box{
+    padding:30px 30px 50px 30px;
+    background: var(--bg-colour);
+    height:40rem;
+    border-radius: 27px;
+    border:1px solid transparent;
+    box-shadow: 0 0 5px var(--main-colour);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.box h3{
+    
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.box h2{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.box ul li{
+    font-family: var(--font-fam);
+    list-style: disc;
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;;
+}
+.box a{
+    display: inline-block;
+    line-height: 1.2rem;
+    padding: 7px 0;
+    color:var(--text-colour);
+    border-bottom: 2px solid #5d6c83;
+    font-size: 22px;
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+.box i{
+    vertical-align: middle;
+    font-size: 25px;
+    color:var(--main-colour);
+    margin-left:5px;
+}
+.box:hover{
+    border-bottom: 1px solid var(--main-colour);
+    transition: all 0.5s ease;
+    transform: translate(-5px) scale(1.04);
+}
+/*Thank You Page */
+.thankyou-section {
+    background-color: var(--bg-colour);
+}
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+.thankyou h3{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--text-colour);
+    margin-bottom: 3rem;
+    font-family: var(--font-fam);
+}
