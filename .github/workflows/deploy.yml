@@ -5,20 +5,26 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout source
+        uses: actions/checkout@v4
 
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v5
 
-      - name: Upload frontend to GitHub Pages
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload static files
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: './frontend'
+          path: './frontend'  # 👈 Make sure your frontend files are here!
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
